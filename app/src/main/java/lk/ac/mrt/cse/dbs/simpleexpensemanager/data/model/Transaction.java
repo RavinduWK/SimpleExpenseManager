@@ -40,11 +40,11 @@ public class Transaction {
         this.accountNo = accountNo;
     }
 
-    public ExpenseType getExpenseType() {
+    public Type getExpenseType() {
         return expenseType;
     }
 
-    public void setExpenseType(ExpenseType expenseType) {
+    public void setExpenseType(Type expenseType) {
         this.expenseType = expenseType;
     }
 
@@ -57,11 +57,11 @@ public class Transaction {
     }
 
     private String accountNo;
-    private ExpenseType expenseType;
+    private Type expenseType;
     private double amount;
 
     public Transaction(Date date, String accountNo,
-                       ExpenseType expenseType, double amount) {
+                       Type expenseType, double amount) {
         this.date = date;
         this.accountNo = accountNo;
         this.expenseType = expenseType;
